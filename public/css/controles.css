@@ -1,0 +1,86 @@
+section#controls {
+  background: rgba(0, 0, 0, 0.911);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#controls i {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+  color: #626262;
+}
+
+section#controls i#prev-control {
+  font-size: 2.2rem;
+}
+
+section#controls i#next-control {
+  font-size: 2.2rem;
+}
+
+section#controls i:hover {
+  color: #ffffff;
+
+}
+
+section#controls input#progressbar {
+  width: 50vw ;
+}
+
+section#controls i#vol-icon {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+section#controls input#volume {
+  width: 10%;
+}
+
+section#controls span {
+  padding: 1rem;
+}
+
+section#controls #abrir-modal {
+  font-size: 20pt;
+  margin-left: 20px;
+}
+
+
+
+@media only screen and (max-width: 1280px){
+  section#controls {
+    height: 7vh;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  section#controls input#volume {
+    width: 10vw;
+  }
+
+  section#controls input#progressbar {
+    width: 40vw ;
+  }
+
+  #abrir-modal {
+    display:none;
+  }
+  
+}
+
+@media only screen and (max-width: 600px){
+  section#controls {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #abrir-modal {
+    display:none;
+  }
+}

@@ -1,0 +1,202 @@
+section#player {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap:nowrap;
+}
+
+section#player h1 {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 5rem 0;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+section#player div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section#player div img#currentImg {
+  width: 35rem;
+  height: 35rem;
+  margin-top: 8rem;
+}
+
+section#player div h2#currentName {
+  width: 100%;
+  text-align: center;
+  padding: 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+section#player table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50rem;
+  display: none;
+}
+
+section#player table th,
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+section#player table td img {
+  width: 3rem;
+}
+
+.musics td {
+  border: none;
+}
+
+.musics {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.musics:hover {
+  background: rgba(83, 83, 83, 0.292);
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem;
+  transition: all .2s ease-in-out;  
+  padding: 10px;
+}
+
+.musicas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  width: 99vw;
+  margin-bottom: 4em;
+}
+
+.titulo {
+  font-size: 14pt;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.autor {
+  font-weight: 300;
+}
+
+
+img {
+  width: 100%;
+}
+
+
+.card:hover {
+  background: rgba(46, 46, 46, 0.43)
+}
+
+
+.modal-container {
+  width: 100%;
+  height: 92.7vh;
+  background: rgba(0, 0, 0, 0.926);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+
+.modal {
+  width: 60%;
+  min-width: 300px;
+  padding: 40px;
+
+}
+
+.mostrar {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal{
+  animation:modal .8s;
+}
+
+@media only screen and (max-width: 1280px){
+  .musicas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    justify-items: center;
+    width: 98vw;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  section#player table{
+    width: 50vw;
+  }
+
+  section#player div img#currentImg {
+    width: 30rem;
+    height: 30rem;
+    margin-top: 1rem;
+  }
+  .modal-container{
+    height: 93vh;
+  }
+}
+
+
+@media only screen and (max-width: 950px) {
+  .musicas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .musicas {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    margin: 0;
+  }
+  
+  .card {
+    width: 100%;
+  }
+}

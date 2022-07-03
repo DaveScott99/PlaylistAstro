@@ -1,0 +1,32 @@
+
+
+
+nav ul {
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul li i {
+    font-size: 2rem;
+  }
+  
+
+  nav ul li i:hover {
+    color: rgb(255, 255, 255);
+    transition: all .3s ease-in-out;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #626262;
+
+  }
+
+  
+  nav h1 {
+    font-weight: 100;
+    font-size: 25pt;
+    letter-spacing: 1px;
+  }
