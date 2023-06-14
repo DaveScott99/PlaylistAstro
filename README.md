@@ -6,10 +6,6 @@ Para criar esta aplicação utilizei JavaScript Vanilla para implementar a lógi
 
 Utilizei o banco de dados NoSql MongoDB juntamente com NodeJs para arquivar o dados da música como nome, imagem e o aúdio do mesmo que é recebido por meio de um link de download. Implementei um CRUD básico para incluir, editar e excluir musicas. Fiz o deploy do projeto por meio da plataforma onRender.
 
-
- #### **Link do projeto ->** https://playlistastro.onrender.com/
-
-
 ### **Página principal do projeto.**
 
 ![Captura de Tela 2022-09-15 às 14 20 57](https://user-images.githubusercontent.com/101915085/190472589-07e49027-8e8c-459a-b71c-8b451b9038e6.png)
